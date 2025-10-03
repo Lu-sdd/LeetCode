@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/Lu-sdd/LeetCode/tree/master/0125-valid-palindrome) |
+| [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Lu-sdd/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Math
 |  |
 | ------- |
@@ -71,4 +72,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/Lu-sdd/LeetCode/tree/master/0011-container-with-most-water) |
 | [0455-assign-cookies](https://github.com/Lu-sdd/LeetCode/tree/master/0455-assign-cookies) |
+## Sliding Window
+|  |
+| ------- |
+| [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Lu-sdd/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 <!---LeetCode Topics End-->
