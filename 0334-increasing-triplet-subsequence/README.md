@@ -35,3 +35,19 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you implement a solution that runs in <code>O(n)</code> time complexity and <code>O(1)</code> space complexity?
+<p>Sure! The goal is to determine if there exists an increasing subsequence of length three in the array.
+
+A brute-force or dynamic programming approach could work, but both would be inefficient — O(n²) or worse.
+So instead, I used a greedy approach that runs in O(n) time and uses constant space.
+
+The key idea is to track the smallest and the second smallest numbers seen so far — I call them first and second.
+As I iterate through the array:
+
+If the current number is smaller than or equal to first, I update first.
+
+Else if it’s smaller than or equal to second, I update second.
+
+Otherwise, if it’s greater than both, that means I’ve found a number larger than second,
+so there exists first < second < current, and I can return true.
+
+If I finish scanning the array without finding such a triplet, I return false.</p>
