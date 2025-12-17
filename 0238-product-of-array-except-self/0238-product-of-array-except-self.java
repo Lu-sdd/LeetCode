@@ -1,22 +1,25 @@
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        int n = nums.length;
-        int[] res = new int[n];
+        int length = nums.length;
+        int[] prefix = new int[length];
 
-        //Compute prefix products and store them in res array
-        res[0] = 1;
-        for(int i = 1; i < n; i++){
-            res[i] = res[i-1] * nums[i-1];
-        };
-
-        //Use a right var to store suffix so the space complexity could be O(1)
-        int right = 1;
-        for(int i = n -1; i >= 0; i--){
-            res[i] *= right;
-            right *= nums[i];
+        prefix[0] = 1;
+        for(int i = 1; i < length; i++) {
+            prefix[i] = nums[i-1] * prefix[i -1];
         }
 
-        return res;
+        int[] suffix = new int[length];
+        suffix[length -1] = 1;
+        for(int i = length - 2; i >= 0; i--){
+            suffix[i] = nums[i + 1] * suffix[i + 1];
+        }
+
+        int[] answer = new int[length];
+        for(int i = 0; i < length; i++) {
+            answer[i] = prefix[i] * suffix[i];
+        }
+
+        return answer;
         
     }
 }
